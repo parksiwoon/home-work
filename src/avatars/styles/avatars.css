@@ -25,20 +25,35 @@ body {
 
 /* 아바타 개별 요소 */
 .avatar {
+  position: relative; /* 상태 표시 위치 조정 */
+  width: 64px;
+  height: 64px;
 }
 
 /* 프로필 이미지 스타일 */
 .profile-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 /* 상태 표시 */
 .status {
+  position: absolute;
+  bottom: 0px; /* 이미지 경계를 벗어나지 않도록 설정 */
+  right: 0px; /* 프로필 이미지의 외곽선에 위치하도록 조정 */
+  width: 17.78px;
+  height: 17.78px;
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 /* 초록색 - 온라인 */
 .online {
+  background-color: #4cfe88;
 }
 
 /* 회색 - 오프라인 */
 .offline {
+  background-color: #dbdbdb;
 }
