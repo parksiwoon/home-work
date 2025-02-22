@@ -66,3 +66,10 @@
 - 상태 표시 원을 **프로필과 함께 움직이도록 배치하는 방법(position 사용법)**을 익힘.
 - **Lazy Loading을 통해 성능을 최적화하는 방법**을 실험하고 적용해봄.
 - 접근성을 고려하여 **스크린 리더를 위한 추가 정보(`aria-label`)를 제공**하는 것이 중요함을 깨달음.
+
+---
+
++) github pages 에서 계속 이미지 로드가 되지않아서 상대경로로도 해보고, 절대경로로도 해보아도 NOT FOUND가 발생함.
+
+- [github pages Docs](https://docs.github.com/ko/pages/getting-started-with-github-pages/about-github-pages)
+  읽고 광명을 얻었습니다... 유독 vercel이 그리워지는 밤이었지만 좋은 경험이었다고 생각합니다...
