@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML/CSS 과제</title>
+
+    <!-- GitHub Pages에서 동작하도록 base 태그 추가 -->
+    <base href="https://parksiwoon.github.io/home-work/" />
+
     <style>
       body {
         margin: 0;
@@ -65,6 +69,57 @@
       .homework-links a:hover {
         color: #007bff;
       }
+
+      /*custom css*/
+      .homework-groups {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        padding: 0;
+      }
+
+      .homework-group {
+        display: flex;
+        gap: 8px;
+      }
+
+      .homework-group a {
+        background: #f0f0f0;
+        color: #333;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .homework-group a:hover {
+        background: #007bff;
+        color: white;
+      }
+
+      /* 주차 구분선 스타일 */
+      .week-divider {
+        font-weight: bold;
+        color: #888;
+        margin: 8px 0;
+        text-align: center;
+        width: 100%;
+        position: relative;
+      }
+
+      .week-divider::before,
+      .week-divider::after {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: 1px;
+        background-color: #ccc;
+        margin: 0 8px;
+        vertical-align: middle;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
@@ -85,11 +140,18 @@
       <h1 class="name">박시운</h1>
       <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 13기 박시운 입니다.</p>
       <p>과제 결과는 링크를 선택해주세요.</p>
-      <ul class="homework-links">
-        <li><a href="./src/md/markdown.md">1마크다운 문법</a></li>
-        <li><a href="./src/md/retrospect.md">1회고</a></li>
-        <li><a href="./src/avatars/avatars.html">2아바타HTML/CSS</a></li>
-      </ul>
+      <div class="homework-groups">
+        <div class="week-divider">1,2주차</div>
+        <div class="homework-group">
+          <a href="./src/md/markdown.md">📄 마크다운</a>
+          <a href="./src/md/retrospect.md">✍️ 회고</a>
+        </div>
+        <div class="week-divider">3주차</div>
+        <div class="homework-group">
+          <a href="./src/avatars/avatars.html">👤 아바타</a>
+          <a href="./src/avatars/avatars.md">📋 회고</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
