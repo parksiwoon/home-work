@@ -1,0 +1,11 @@
+/* 여기에 스타일을 구현해 주세요 */
+
+/* 전체 스타일 */
+body {
+  background-color: #ffffff; /* 배경색 지정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
