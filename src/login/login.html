@@ -124,5 +124,27 @@
         </div>
       </form>
     </main>
+
+    <script>
+      // IP 스위치 ON/OFF
+      const ipSwitch = document.getElementById("ipSwitch");
+      const ipSwitchLabel = document.querySelector(".ip-switch-label");
+
+      ipSwitch.addEventListener("change", () => {
+        ipSwitchLabel.textContent = ipSwitch.checked ? "ON" : "OFF";
+      });
+
+      // 폼 유효성 검사
+      const loginForm = document.getElementById("loginForm");
+      loginForm.addEventListener("submit", (e) => {
+        const userId = document.getElementById("userId");
+        const password = document.getElementById("password");
+
+        if (!userId.value.trim() || !password.value.trim()) {
+          e.preventDefault();
+          alert("아이디와 비밀번호를 모두 입력해주세요.");
+        }
+      });
+    </script>
   </body>
 </html>
